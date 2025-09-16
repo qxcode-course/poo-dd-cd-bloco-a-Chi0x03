@@ -1,0 +1,21 @@
+remote: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+lang: py
+filter:
+- BLOCO_A
+- BLOCO_B
+version: 0.0.1
+database: database
+expanded:
+- configuracao-e-aquecimento
+- campanha-principal
+- bloco_b-primeiras-classes
+tasks:
+  git_pratica: '{rate:100, alone:10}'
+  toalha: '{rate:100, guide:sena_e_readme, other:google, alone:9, study:15}'
+flags:
+  quests: 0
+  tracks: 0
+  tasks: 0
+  graph: 1
+  xray: 0
+index: toalha
