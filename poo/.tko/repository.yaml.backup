@@ -9,13 +9,17 @@ expanded:
 - configuracao-e-aquecimento
 - campanha-principal
 - bloco_b-primeiras-classes
+- bloco_a-configuração-de-ambiente
 tasks:
+  git: '{rate:100, guide:professor, alone:9, study:15}'
+  tko: '{rate:100, guide:readme, alone:10, study:3}'
   git_pratica: '{rate:100, alone:10}'
   toalha: '{rate:100, guide:sena_e_readme, other:google, alone:9, study:15}'
+  animal: '{rate:100, guide:readme, alone:10, study:20}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
   graph: 1
   xray: 0
-index: toalha
+index: animal

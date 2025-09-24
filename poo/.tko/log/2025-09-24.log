@@ -1,0 +1,17 @@
+2025-09-24 09:14:38, SELF, v:1, k:git, rate:100, guide:professor, alone:9, study:15
+2025-09-24 09:14:55, SELF, v:1, k:tko, rate:100
+2025-09-24 09:15:32, SELF, v:1, k:tko, rate:100, guide:readme, alone:10, study:3
+2025-09-24 09:16:02, MOVE, v:1, k:animal, mode:DOWN
+2025-09-24 09:25:04, MOVE, v:1, k:animal, mode:PICK
+2025-09-24 09:25:06, EXEC, v:1, k:animal, mode:FULL, rate:0, size:40
+2025-09-24 09:26:13, EXEC, v:1, k:animal, mode:FULL, rate:0, size:45
+2025-09-24 09:26:27, EXEC, v:1, k:animal, mode:FULL, rate:0, size:45
+2025-09-24 09:26:37, EXEC, v:1, k:animal, mode:FULL, rate:25, size:46
+2025-09-24 09:27:16, EXEC, v:1, k:animal, mode:FULL, rate:25, size:46
+2025-09-24 09:27:57, EXEC, v:1, k:animal, mode:FULL, rate:25, size:46
+2025-09-24 09:28:14, EXEC, v:1, k:animal, mode:FULL, rate:50, size:46
+2025-09-24 09:28:30, EXEC, v:1, k:animal, mode:FULL, rate:100, size:46
+2025-09-24 09:28:33, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-24 09:28:51, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-24 09:28:59, MOVE, v:1, k:animal, mode:BACK
+2025-09-24 09:29:34, SELF, v:1, k:animal, rate:100, guide:readme, alone:10, study:20
