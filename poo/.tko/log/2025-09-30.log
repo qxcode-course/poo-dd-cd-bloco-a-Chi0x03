@@ -1,0 +1,14 @@
+2025-09-30 14:33:02, MOVE, v:1, k:enxugar, mode:DOWN
+2025-09-30 14:33:07, MOVE, v:1, k:enxugar, mode:PICK
+2025-09-30 14:35:04, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:57
+2025-09-30 14:35:35, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:57
+2025-09-30 14:36:30, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:57
+2025-09-30 14:37:00, EXEC, v:1, k:enxugar, mode:FULL, rate:20, size:57
+2025-09-30 14:37:19, EXEC, v:1, k:enxugar, mode:FULL, rate:30, size:57
+2025-09-30 14:37:50, EXEC, v:1, k:enxugar, mode:FULL, rate:50, size:57
+2025-09-30 14:38:08, EXEC, v:1, k:enxugar, mode:FULL, rate:90, size:57
+2025-09-30 14:38:28, EXEC, v:1, k:enxugar, mode:FULL, rate:100, size:57
+2025-09-30 14:38:35, EXEC, v:1, k:enxugar, mode:FULL, rate:100
+2025-09-30 14:38:36, MOVE, v:1, k:enxugar, mode:BACK
+2025-09-30 14:38:40, SELF, v:1, k:enxugar, rate:100
+2025-09-30 14:38:52, SELF, v:1, k:enxugar, rate:100, alone:10, study:5

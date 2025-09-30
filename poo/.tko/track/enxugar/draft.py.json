@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-30_14-35-04",
+            "content": "@@ -1076,21 +1076,27 @@\n wel(\n-args%5B1%5D, args\n+command%5B1%5D, command\n %5B2%5D)\n@@ -1148,20 +1148,23 @@\n dry(int(\n-args\n+command\n %5B1%5D))%0A  \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-30_14-35-35",
+            "content": "@@ -983,20 +983,23 @@\n %0A    if \n-args\n+command\n %5B0%5D == %22\n@@ -1019,36 +1019,39 @@\n  break%0A    elif \n-args\n+command\n %5B0%5D == %22criar%22:%0A\n@@ -1091,36 +1091,39 @@\n gs%5B2%5D)%0A    elif \n-args\n+command\n %5B0%5D == %22dry%22:%0A  \n@@ -1153,36 +1153,39 @@\n s%5B1%5D))%0A    elif \n-args\n+command\n %5B0%5D == %22wring%22:%0A\n@@ -1210,36 +1210,39 @@\n gOut()%0A    elif \n-args\n+command\n %5B0%5D == %22seca%22:%0A \n@@ -1278,20 +1278,23 @@\n    elif \n-args\n+command\n %5B0%5D == %22\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-30_14-36-30",
+            "content": "@@ -830,13 +830,8 @@\n n f%22\n-Cor: \n %7Bsel\n@@ -842,18 +842,8 @@\n lor%7D\n-, Tamanho:\n  %7Bse\n@@ -854,18 +854,8 @@\n ize%7D\n-, Umidade:\n  %7Bse\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-30_14-37-00",
+            "content": "@@ -1268,17 +1268,8 @@\n int(\n-%22sim%22 if \n towe\n@@ -1281,19 +1281,8 @@\n ry()\n- else %22nao%22\n )%0A  \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-30_14-37-19",
+            "content": "@@ -1134,15 +1134,11 @@\n == %22\n-enxugar\n+dry\n %22:%0A \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-30_14-37-50",
+            "content": "@@ -494,17 +494,16 @@\n etness %3E\n-=\n  self.ge\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-30_14-38-08",
+            "content": "@@ -1198,14 +1198,13 @@\n == %22\n-torcer\n+wring\n %22:%0A \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-09-30_14-38-28",
+            "content": "class Towel:\n    color: str\n    size: str\n    wetness: int\n\n    def __init__(self, color: str, size: str) -> None:\n        self.color = color\n        self.size = size\n        self.wetness = 0\n\n    def getMaxWetness(self) -> int:\n        if self.size == \"P\":\n            return 10\n        elif self.size == \"M\":\n            return 20\n        elif self.size == \"G\":\n            return 30\n\n        return 0\n\n    def dry(self, amount: int) -> None:\n        self.wetness += amount\n        if self.wetness >= self.getMaxWetness():\n            print(\"toalha encharcada\")\n            self.wetness = self.getMaxWetness()\n\n    def wringOut(self) -> None:\n        self.wetness = 0\n\n    def isDry(self) -> bool:\n        return self.wetness == 0\n    \n    def show(self) -> None:\n        print(self)\n\n    def __str__(self) -> str:\n        return f\"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}\"\n\ntowel = Towel(\"\", \"\")\nwhile True:\n    command = input()\n    args = command.split()\n    print(f\"${command}\")\n    if args[0] == \"end\":\n        break\n    elif args[0] == \"criar\":\n        towel = Towel(args[1], args[2])\n    elif args[0] == \"enxugar\":\n        towel.dry(int(args[1]))\n    elif args[0] == \"torcer\":\n        towel.wringOut()\n    elif args[0] == \"seca\":\n        print(\"sim\" if towel.isDry() else \"nao\")\n    elif args[0] == \"mostrar\":\n        towel.show()\n    else:\n        print(\"fail: comando invalido\")",
+            "lines": "57"
+        }
+    ]
+}
