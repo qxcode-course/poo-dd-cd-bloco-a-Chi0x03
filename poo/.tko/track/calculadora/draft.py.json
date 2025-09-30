@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-30_14-39-23",
+            "content": "@@ -1,1368 +0,0 @@\n-class Calculator:%0A  display: float = 0.0%0A  batteryMax: int = 100%0A  battery: int = 0%0A%0A  def __init__(self, batteryMax: int) -%3E None:%0A    self.batteryMax = batteryMax%0A%0A  def charge(self, amount: int) -%3E None:%0A    self.battery += amount%0A    if self.battery %3E self.batteryMax:%0A      self.battery = self.batteryMax%0A%0A  def sum(self, a: float, b: float):%0A    if self.battery %3C= 0:%0A      print(%22fail: bateria insuficiente%22)%0A      return%0A    self.battery -= 1%0A    self.display = a + b%0A%0A  def division(self, num: float, den: float):%0A    if self.battery %3C= 0:%0A      print(%22fail: bateria insuficiente%22)%0A      return%0A    self.battery -= 1%0A    if den == 0:%0A      print(%22fail: divisao por zero%22)%0A      self.display = 0.0%0A      return%0A    self.display = num / den%0A%0A  def __str__(self) -%3E str:%0A    return f%22display = %7Bself.display:.2f%7D, battery: %7Bself.battery%7D%22%0A  %0Acalculator = Calculator(0)%0Awhile True:%0A  command = input()%0A  args = command.split()%0A  print(%22$%22 + command)%0A  if args%5B0%5D == %22end%22:%0A    break%0A  elif args%5B0%5D == %22show%22:%0A    print(calculator)%0A  elif args%5B0%5D == %22init%22:%0A    calculator = Calculator(int(args%5B1%5D))%0A  elif args%5B0%5D == %22charge%22:%0A    calculator.charge(int(args%5B1%5D))%0A  elif args%5B0%5D == %22sum%22:%0A    calculator.sum(float(args%5B1%5D), float(args%5B2%5D))%0A  elif args%5B0%5D == %22div%22:%0A    calculator.division(float(args%5B1%5D), float(args%5B2%5D))%0A  else:%0A    print(%22fail: comando invalido%22)\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-09-30_14-46-08",
+            "content": "@@ -820,18 +820,17 @@\n  battery\n- =\n+:\n  %7Bself.b\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-09-30_14-46-18",
+            "content": "@@ -674,16 +674,41 @@\n  zero%22)%0A\n+      self.display = 0.0%0A\n       re\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-09-30_14-46-31",
+            "content": "class Calculator:\n  display: float = 0.0\n  batteryMax: int = 100\n  battery: int = 0\n\n  def __init__(self, batteryMax: int) -> None:\n    self.batteryMax = batteryMax\n\n  def charge(self, amount: int) -> None:\n    self.battery += amount\n    if self.battery > self.batteryMax:\n      self.battery = self.batteryMax\n\n  def sum(self, a: float, b: float):\n    if self.battery <= 0:\n      print(\"fail: bateria insuficiente\")\n      return\n    self.battery -= 1\n    self.display = a + b\n\n  def division(self, num: float, den: float):\n    if self.battery <= 0:\n      print(\"fail: bateria insuficiente\")\n      return\n    self.battery -= 1\n    if den == 0:\n      print(\"fail: divisao por zero\")\n      return\n    self.display = num / den\n\n  def __str__(self) -> str:\n    return f\"display = {self.display:.2f}, battery = {self.battery}\"\n  \ncalculator = Calculator(0)\nwhile True:\n  command = input()\n  args = command.split()\n  print(\"$\" + command)\n  if args[0] == \"end\":\n    break\n  elif args[0] == \"show\":\n    print(calculator)\n  elif args[0] == \"init\":\n    calculator = Calculator(int(args[1]))\n  elif args[0] == \"charge\":\n    calculator.charge(int(args[1]))\n  elif args[0] == \"sum\":\n    calculator.sum(float(args[1]), float(args[2]))\n  elif args[0] == \"div\":\n    calculator.division(float(args[1]), float(args[2]))\n  else:\n    print(\"fail: comando invalido\")",
+            "lines": "52"
+        }
+    ]
+}

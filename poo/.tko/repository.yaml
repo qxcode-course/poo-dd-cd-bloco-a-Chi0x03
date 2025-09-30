@@ -8,8 +8,8 @@ database: database
 expanded:
 - configuracao-e-aquecimento
 - campanha-principal
-- bloco_b-primeiras-classes
 - bloco_a-configuração-de-ambiente
+- bloco_b-primeiras-classes
 tasks:
   git: '{rate:100, guide:professor, alone:9, study:15}'
   tko: '{rate:100, guide:readme, alone:10, study:3}'
@@ -17,11 +17,12 @@ tasks:
   toalha: '{rate:100, guide:sena_e_readme, other:google, alone:9, study:15}'
   animal: '{rate:100, guide:readme, alone:10, study:20}'
   carro: '{rate:100, other:google, alone:10, study:70}'
-  enxugar: '{rate:100, alone:10, study:5}'
+  calculadora: '{rate:100, iagen:autocomplete_apenas_copilot, alone:10, study:8}'
+  enxugar: '{rate:100, iagen:autocomplete_apenas_copilot, alone:10, study:5}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
   graph: 1
   xray: 0
-index: calculadora
+index: bloco_b-primeiras-classes

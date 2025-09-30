@@ -12,3 +12,13 @@
 2025-09-30 14:38:36, MOVE, v:1, k:enxugar, mode:BACK
 2025-09-30 14:38:40, SELF, v:1, k:enxugar, rate:100
 2025-09-30 14:38:52, SELF, v:1, k:enxugar, rate:100, alone:10, study:5
+2025-09-30 14:39:18, MOVE, v:1, k:calculadora, mode:DOWN
+2025-09-30 14:39:19, MOVE, v:1, k:calculadora, mode:PICK
+2025-09-30 14:39:23, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:0
+2025-09-30 14:46:08, EXEC, v:1, k:calculadora, mode:FULL, rate:0, size:53
+2025-09-30 14:46:18, EXEC, v:1, k:calculadora, mode:FULL, rate:81, size:53
+2025-09-30 14:46:31, EXEC, v:1, k:calculadora, mode:FULL, rate:100, size:52
+2025-09-30 14:46:39, MOVE, v:1, k:calculadora, mode:BACK
+2025-09-30 14:47:05, SELF, v:1, k:calculadora, rate:100, iagen:autocomplete_apenas, alone:10
+2025-09-30 14:47:23, SELF, v:1, k:enxugar, rate:100, iagen:autocomplete_apenas_copilot, alone:10, study:5
+2025-09-30 14:47:38, SELF, v:1, k:calculadora, rate:100, iagen:autocomplete_apenas_copilot, alone:10, study:8
